@@ -1,4 +1,5 @@
 html{
+    height: 100%;
     box-sizing: border-box;
     }
 *, *:before,*after{
@@ -11,6 +12,7 @@ html{
 }
 
 body{
+    height: 100%;
     font-family: verdana, geneva, serif;
 }
 
@@ -18,7 +20,7 @@ header{
     
     padding: 8% 0;
     background-color: dodgerblue;
-        
+    max-width: 100%;    
 }
 div.contenedor{
     width: 1200px;
@@ -92,21 +94,23 @@ nav ul li:hover > ul{
 
 .habilidades{
     background-color: dodgerblue;
+    padding: 50px;
 }
 
 
-span{
-    width: 1200;
-    margin: 0 auto;
-    position: relative;
-    
-}
+
 span ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-span > ul > li{
+span ul li{
     float: left;
+    width: 25%;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
 }
 
 span ul::after{
@@ -127,9 +131,14 @@ span ul li a{
 }
 
 
-
-span ul li a:hover {
-    background-color: cyan;
+div.quiensoy{
+    padding: 100px 10px;
 }
 
+div.quehago{
+    padding: 100px 10px;
+}
 
+div.contacto{
+    padding: 100px 10px;
+}
