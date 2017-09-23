@@ -16,12 +16,16 @@ body{
 
 header{
     
-    padding: 20px 0;
+    padding: 8% 0;
+    background-color: dodgerblue;
         
 }
 div.contenedor{
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 60pt;
 }
 
 /**navegacion**/
@@ -63,7 +67,7 @@ nav ul li a{
 
 
 nav ul li a:hover {
-    background-color: #000000;
+    background-color: cyan;
 }
 
 /**sub nivel de navegacion**/
@@ -84,3 +88,48 @@ nav ul ul li {
 nav ul li:hover > ul{
     display: block;
 }
+
+
+.habilidades{
+    background-color: dodgerblue;
+}
+
+
+span{
+    width: 1200;
+    margin: 0 auto;
+    position: relative;
+    
+}
+span ul{
+    list-style: none;
+}
+
+span > ul > li{
+    float: left;
+}
+
+span ul::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+
+
+span ul li a{
+    display: inline-block;
+    width: 300px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+span ul li a:hover {
+    background-color: cyan;
+}
+
+
