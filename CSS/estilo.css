@@ -2,6 +2,7 @@ html{
     height: 100%;
     box-sizing: border-box;
     }
+
 *, *:before,*after{
     box-sizing: inherit;
 }
@@ -22,6 +23,7 @@ header{
     background-color: dodgerblue;
     max-width: 100%;    
 }
+
 div.contenedor{
     width: 1200px;
     margin: 0 auto;
@@ -31,7 +33,7 @@ div.contenedor{
 }
 
 /**navegacion**/
-.Navegacion{
+div.Navegacion{
     background-color: dodgerblue;
 }
 
@@ -39,13 +41,12 @@ nav{
     width: 1200;
     margin: 0 auto;
     position: relative;
-    
 }
-nav ul{
+nav>ul{
     list-style: none;
 }
 
-nav > ul > li{
+nav ul li{
     float: left;
 }
 
@@ -69,12 +70,12 @@ nav ul li a{
 
 
 nav ul li a:hover {
-    background-color: cyan;
+    background-color: red;
 }
 
 /**sub nivel de navegacion**/
 
-nav ul ul {
+nav ul ul{
     position: absolute;
     top: 100%;
     background-color: rgba(0, 184, 228, 0.7 );
@@ -91,29 +92,21 @@ nav ul li:hover > ul{
     display: block;
 }
 
+div.quiensoy{
+    padding: 100px 10px;
+}
 
-.habilidades{
+
+div.quehago{
+    padding: 100px 10px;
+}
+
+div.habilidades{
     background-color: dodgerblue;
     padding: 50px;
 }
 
-
-
-span ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-span ul li{
-    float: left;
-    width: 25%;
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
-}
-
-span ul::after{
+div.habilidades::after{
     content:'';
     display: block;
     clear: both;
@@ -121,8 +114,19 @@ span ul::after{
 
 
 
-span ul li a{
+div.habilidad{
     display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.habilidad{
+    float: left;
+    width: 25%;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
     width: 300px;
     color: white;
     text-decoration: none;
@@ -130,15 +134,10 @@ span ul li a{
     padding: 20px;
 }
 
-
-div.quiensoy{
-    padding: 100px 10px;
-}
-
-div.quehago{
-    padding: 100px 10px;
-}
-
 div.contacto{
     padding: 100px 10px;
+}
+
+form.formulario{
+    display: inline-block;
 }
