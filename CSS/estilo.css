@@ -119,9 +119,6 @@ div.habilidad{
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-div.habilidad{
     float: left;
     width: 25%;
     padding: 40px 20px;
@@ -133,6 +130,7 @@ div.habilidad{
     text-align: center;
     padding: 20px;
 }
+
 
 div.contacto{
     padding: 100px 10px;
