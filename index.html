@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <meta lang="es">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/estilo.css">
         <title>Pagina de prueba de Poldonsito</title>
@@ -9,74 +10,63 @@
 
     <body>
         <header>
-        <div class="contenedor">
-            <div class="logo">
-                <h1>Poldonsito</h1>
-            </div>
-        </div>
-        
+            <h1>Poldonsito</h1>
         </header>
             
-        <div class="Navegacion">
-            <nav>
-                <ul>
-                    <li><a href="#quiensoy">¿Quién soy?</a></li>
-                    <li><a href="#quehago">¿Qué hago?</a>
-                        <ul>
-                            <li><a href="#">Web Developing?</a></li>
-                            <li><a href="#">Diseño Gráfico</a></li>    
-                            <li><a href="#">Apps (IOS y Android)</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#quiensoy">¿Quién soy?</a></li>
+                <li><a href="#quehago">¿Qué hago?</a>
+                    <ul>
+                        <li><a href="#">Web Developing?</a></li>
+                        <li><a href="#">Diseño Gráfico</a></li>    
+                        <li><a href="#">Apps (IOS y Android)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
         
-        <div class="quiensoy">
-            <A name="quiensoy"></A>
+        <section id="quiensoy">
+            <h2>¿Quién soy?</h2>
             <article>
-                <h2>¿Quién soy?</h2>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </article>
-        </div>
-            
-        <div class="quehago">
-            <A name="quehago"></A>
+        </section>
+        
+        <section id="quehago">
+            <h2>¿Qué hago?</h2>
             <article>
-                <h2>¿Qué hago?</h2>
                 <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
-            <div class="habilidades">
+            </article>
+        </section>
+        
+        <div class="habilidades">
                 
                 <div class="habilidad">
-                    <a>Web Develiping</a>
+                    <em>Web Develiping</em>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
                 
                 <div class="habilidad">
-                    <a>Diseño Gráfico</a>
+                    <em>Diseño Gráfico</em>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
                 
                 <div class="habilidad">
-                    <a>Desarrollo de Apps</a>
+                    <em>Desarrollo de Apps</em>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 </div>
                 
             </div>
-            
-            </article>
-            
-        </div>
         
         
         <div class="contacto">
-            <A name="contacto"></A>
-            <h2>Contacto</h2>
+            <h3>Contacto</h3>
             <form class="formulario">
                 <div id="nombre">
                     <label>Nombre:</label>
@@ -89,12 +79,13 @@
                 </div>
                 
                 <div id="areatexto">
-                    <textarea rows="10" cols="80" placeholder="Escribe aquí"></textarea>
+                    <textarea rows="10" cols="50" placeholder="Escribe aquí"></textarea>
                 </div>
                 
                 <input id="enviarbutton" type="submit" value="Enviar">
             </form>    
         </div>
+        
     </body>
 
 
